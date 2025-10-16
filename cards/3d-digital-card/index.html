@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Business Card - Front & Back</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    
+    <div id="controls-container">
+      <h2>Front Details</h2>
+      <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" value="Aisha Nama">
+      </div>
+      <div class="input-group">
+          <label for="title">Title / Role</label>
+          <input type="text" id="title" value="AI & Data Science Enthusiast">
+      </div>
+      <div class="input-group">
+          <label for="contact">Contact Info</label>
+          <input type="text" id="contact" value="aisha.nama@email.com">
+      </div>
+      
+      <h2 style="margin-top: 20px;">Back Details</h2>
+       <div class="input-group">
+          <label for="slogan">Slogan / Website</label>
+          <input type="text" id="slogan" value="Let's build the future.">
+      </div>
+       <div class="input-group">
+          <label for="logo">Upload Logo (optional)</label>
+          <input type="file" id="logo" accept="image/png, image/jpeg">
+      </div>
+
+      <h2 style="margin-top: 20px;">Card Style</h2>
+      <div class="input-group">
+          <label for="bgColor">Card Color</label>
+          <input type="color" id="bgColor" value="#ffffff">
+      </div>
+      <div class="input-group">
+          <label for="textColor">Text Color</label>
+          <input type="color" id="textColor" value="#333333">
+      </div>
+    </div>
+  
+    <div id="instructions">
+     <p><b>Click & Drag Horizontally:</b> Rotate Card | <b>Scroll:</b> Zoom<br/>
+     <b>Drag & Drop</b> text or logo directly on the card to reposition.</p>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
